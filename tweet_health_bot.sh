@@ -10,6 +10,6 @@ ${file}
 echo "start" >> ${log}
 echo `date` >> ${log}
 
-sudo -u crukky twurl -d "status=${state}" /1.1/statuses/update.json &>> ${log}
+/home/crukky/bin/twurl -d "status=${state}" /1.1/statuses/update.json &>> ${log}
 
 echo "end" >> ${log}
